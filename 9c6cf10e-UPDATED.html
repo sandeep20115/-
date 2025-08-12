@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NIKKA MD OFFICIAL</title>
+  <style>
+    :root{
+      --accent: red;
+      --bg-dark: #06131a;
+      --card-bg: rgba(255,255,255,0.06);
+      --glass: rgba(255,255,255,0.03);
+      --btn-radius: 12px;
+      --max-width: 420px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+    html,body{height:100%;margin:0;background:#000;overflow:hidden;}
+    /* background video */
+    #bgVideo{
+      position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+      filter:brightness(0.48) contrast(1.05);
+    }
+    /* subtle overlay */
+    .bg-overlay{
+      position:fixed;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75));z-index:-1;
+    }
+    /* center card */
+    .container{
+      min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px;
+    }
+    .card{
+      width:100%;max-width:var(--max-width);text-align:center;color:#e9f6ff;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;padding:28px;box-shadow:0 12px 30px rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+    }
+    .logo{
+      width:120px;height:120px;border-radius:50%;object-fit:cover;border:6px solid rgba(19,194,255,0.12);
+      margin:-90px auto 10px;display:block;background:linear-gradient(45deg,#0ff,#06a);
+    }
+    h1{margin:6px 0 4px;font-size:20px;letter-spacing:0.6px}
+    .owner-name{font-size:14px;opacity:0.9;margin-bottom:12px}
+    .buttons{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+    .btn{
+      display:block;padding:14px 16px;border-radius:var(--btn-radius);text-decoration:none;
+      background:linear-gradient(90deg,var(--accent), #06aaff);color:#023040;font-weight:700;
+      box-shadow:0 6px 14px rgba(6,160,255,0.12), inset 0 -2px 0 rgba(255,255,255,0.06);
+      border:none;font-size:15px;
+    }
+    .muted-btn{background:transparent;color:var(--accent);border:2px solid rgba(19,194,255,0.12);font-weight:700}
+    .deploy-title{margin-top:18px;font-weight:800;color:#fff}
+    .small{font-size:13px;opacity:0.9;margin-top:10px}
+    footer{margin-top:16px;font-size:13px;color:#cfeefb;opacity:0.85}
+    /* loading overlay */
+    #loader{
+      position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(180deg,#00121a 0%, rgba(0,0,0,0.5) 100%);z-index:9999;
+      color:var(--accent);font-weight:800;font-size:28px;flex-direction:column;
+    }
+    #loader .spinner{width:86px;height:86px;border-radius:50%;border:6px solid rgba(255,255,255,0.06);
+      border-top-color:var(--accent);animation:spin 1.2s linear infinite;margin-bottom:14px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    /* responsive */
+    @media (max-width:480px){
+      .logo{width:96px;height:96px;margin-top:0}
+      .card{padding:20px;border-radius:14px}
+    }
+    /* visitor comments mock */
+    .comment-box{margin-top:14px;background:var(--glass);padding:10px;border-radius:10px;color:#bfefff;}
+    .sound-toggle{margin-top:10px;font-size:13px;padding:8px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
+  </style>
+</head>
+<body>
+  <!-- Background video (replace the src with your actual mp4 video URL) -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <!-- Replace this sample URL with your Naruto fight MP4 URL -->
+    <source src="file:///E:/ARIIS-FUNK-DO-BOUNCE-Slowed-to-perfection-x-Naruto-BRAZILIAN-PHONK-YouTube.mp4" type="video/mp4">
+    Your browser does not support the background video.
+  </video>
+  <div class="bg-overlay"></div>
+
+  <!-- Loading screen -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <div>NIKKA MD OFFICIAL</div>
+    <div style="font-size:14px;opacity:0.85;margin-top:6px">Loading... Please wait</div>
+  </div>
+
+  <div class="container" id="mainContent" style="display:none;">
+    <div class="card">
+      <!-- Logo (uses the user-provided WhatsApp-hosted image) -->
+      <img class="logo" id="brandLogo" src="https://pps.whatsapp.net/m1/v/t24/An876sEBKOH9FyegmCPjLLGRwfZQ88F9Bh-dUppVsWefno5epEl0zyHfqTNjY8rJXmmmpSvPBoplMCNcT_FSkYoaqs00syBfKWIFEaN0ff-x5Dvtfa9rj1JguildM4xSysFZftaxQjJLsRZS6WQ?stp=dst-jpg_tt6&ccb=10-5&oh=01_Q5Aa2QEVdVQ9SQzUM2N601ImsKjdU8Sz5KRbPjDs3aUPMgbpSA&oe=689F81C4&_nc_sid=5e03e0&_nc_cat=105" alt="NIKKA MD LOGO">
+
+      <h1>NIKKA MD OFFICIAL</h1>
+      <div class="owner-name">Owner: <strong>NIKILA KESHARA</strong></div>
+
+      <div class="buttons">
+        <a class="btn" href="tel:+94761527735">📞 Owner Contact — +94761527735</a>
+        <a class="btn" href="https://wa.me/+94761527735" target="_blank" rel="noopener">💬 WhatsApp Chat</a>
+        <a class="btn" href="https://whatsapp.com/channel/0029Va8Yh2jJpe8bn5Tayl1Y" target="_blank" rel="noopener">📣 WhatsApp Channel</a>
+        <a class="btn" href="#" id="pairCodeBtn">🔢 Pair Code</a>
+        <a class="btn" href="#" id="qrPairBtn">🔳 QR Pair</a>
+      </div>
+
+      <div class="deploy-title">Deploy Platforms</div>
+      <div class="buttons" style="margin-top:12px">
+        <a class="btn muted-btn" href="#" onclick="alert('Deploy on Render: follow Render steps')">🚀 Deploy on Render</a>
+        <a class="btn muted-btn" href="#" onclick="alert('Deploy on Heroku: Heroku removed free plans; use alternative')">🚀 Deploy on Heroku</a>
+        <a class="btn muted-btn" href="#" onclick="alert('Deploy on Koyeb: follow Koyeb steps')">🚀 Deploy on Koyeb</a>
+        <a class="btn muted-btn" href="#" onclick="alert('Open GitHub repo')">💻 GitHub</a>
+      </div>
+
+      <div class="small">Visitor Comments</div>
+      <div class="comment-box">
+        <input placeholder="Type your comment..." style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e6fbff">
+      </div>
+
+      <footer>Owner: NIKILA KESHARA • Contact: +94761527735</footer>
+
+      <button class="sound-toggle" id="soundToggle">🔈 Enable Background Audio</button>
+    </div>
+  </div>
+
+  <!-- background audio (replace with your aura song mp3 URL) -->
+  <audio id="bgAudio" loop>
+    <!-- Replace this sample URL with your aura song mp3 URL -->
+    <source src="https://cdn.pixabay.com/download/audio/2021/11/11/audio_5f5d0f297a.mp3?filename=ambient-111964.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Show loader for exactly 4 seconds then reveal the main content
+    window.addEventListener('load', function(){
+      setTimeout(function(){
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'flex';
+      }, 4000); // 4000 ms = 4 seconds
+    });
+
+    // Sound toggle: browsers often block autoplay with sound, so this gives user control
+    const soundToggle = document.getElementById('soundToggle');
+    const bgAudio = document.getElementById('bgAudio');
+    const bgVideo = document.getElementById('bgVideo');
+
+    soundToggle.addEventListener('click', async function(){
+      try {
+        if (bgAudio.paused){
+          await bgAudio.play();
+          soundToggle.textContent = '🔊 Background Audio On';
+        } else {
+          bgAudio.pause();
+          soundToggle.textContent = '🔈 Enable Background Audio';
+        }
+      } catch(err){
+        alert('Browser prevented autoplay. Please interact with the page to enable audio.');
+      }
+    });
+
+    // Pair code and QR pair buttons placeholders
+    document.getElementById('pairCodeBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      prompt('Enter Pair Code (example):', '1234-5678');
+    });
+    document.getElementById('qrPairBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      alert('QR Pair feature not configured. You can add your QR image or logic here.');
+    });
+
+    // small enhancement: if user clicks anywhere try to play muted video & resume audio if previously toggled
+    document.addEventListener('click', function(){
+      if (bgVideo && bgVideo.paused) bgVideo.play().catch(()=>{});
+    });
+
+    // Accessibility: allow phone link copy on long press for mobiles
+    // (No external libraries used; everything is inline in this single file)
+  
+    // Load saved comments
+    function loadComments(){
+      const comments = JSON.parse(localStorage.getItem('comments') || '[]');
+      const inputBox = document.querySelector('.comment-box input');
+      let list = document.getElementById('commentList');
+      if(!list){
+        list = document.createElement('div');
+        list.id = 'commentList';
+        list.style.marginTop = '10px';
+        list.style.textAlign = 'left';
+        document.querySelector('.comment-box').appendChild(list);
+      }
+      list.innerHTML = '';
+      comments.forEach(c => {
+        const div = document.createElement('div');
+        div.textContent = c;
+        div.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+        div.style.padding = '6px';
+        list.appendChild(div);
+      });
+    }
+    window.addEventListener('load', loadComments);
+    const commentInput = document.querySelector('.comment-box input');
+    commentInput.insertAdjacentHTML('afterend', '<button id="addCommentBtn" style="margin-top:8px;width:100%;padding:10px;border-radius:8px;background:red;color:white;font-weight:bold;border:none;">Add Comment</button>');
+    document.getElementById('addCommentBtn').addEventListener('click', () => {
+      const val = commentInput.value.trim();
+      if(val){
+        const comments = JSON.parse(localStorage.getItem('comments') || '[]');
+        comments.push(val);
+        localStorage.setItem('comments', JSON.stringify(comments));
+        commentInput.value = '';
+        loadComments();
+      }
+    });
+</script>
+</body>
+</html>
